@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC0338F62B98A6B7001985E3 /* PandaPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0338F52B98A6B7001985E3 /* PandaPlayerApp.swift */; };
+		DC0338F82B98A6B7001985E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0338F72B98A6B7001985E3 /* ContentView.swift */; };
+		DC0338FA2B98A6B8001985E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0338F92B98A6B8001985E3 /* Assets.xcassets */; };
+		DC0338FD2B98A6B8001985E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0338FC2B98A6B8001985E3 /* Preview Assets.xcassets */; };
+		DC0339082B98A6B8001985E3 /* PandaPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339072B98A6B8001985E3 /* PandaPlayerTests.swift */; };
+		DC0339122B98A6B8001985E3 /* PandaPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339112B98A6B8001985E3 /* PandaPlayerUITests.swift */; };
+		DC0339142B98A6B8001985E3 /* PandaPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339132B98A6B8001985E3 /* PandaPlayerUITestsLaunchTests.swift */; };
+		DC0339212B98A72B001985E3 /* PandoraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339202B98A72B001985E3 /* PandoraAPI.swift */; };
+		DC0339232B98A74A001985E3 /* PandoraAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339222B98A74A001985E3 /* PandoraAPIClient.swift */; };
+		DC0339252B98A766001985E3 /* PandoraModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339242B98A766001985E3 /* PandoraModels.swift */; };
+		DC0339272B98A77D001985E3 /* PandoraConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339262B98A77D001985E3 /* PandoraConstants.swift */; };
+		DC0339292B98A9C6001985E3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0339282B98A9C6001985E3 /* LoginView.swift */; };
+		DC03392B2B98A9D8001985E3 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC03392A2B98A9D8001985E3 /* StationListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC0339042B98A6B8001985E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC0338EA2B98A6B7001985E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC0338F12B98A6B7001985E3;
+			remoteInfo = PandaPlayer;
+		};
+		DC03390E2B98A6B8001985E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC0338EA2B98A6B7001985E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC0338F12B98A6B7001985E3;
+			remoteInfo = PandaPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC0338F22B98A6B7001985E3 /* PandaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0338F52B98A6B7001985E3 /* PandaPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaPlayerApp.swift; sourceTree = "<group>"; };
+		DC0338F72B98A6B7001985E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC0338F92B98A6B8001985E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC0338FC2B98A6B8001985E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC0338FE2B98A6B8001985E3 /* PandaPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PandaPlayer.entitlements; sourceTree = "<group>"; };
+		DC0339032B98A6B8001985E3 /* PandaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0339072B98A6B8001985E3 /* PandaPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaPlayerTests.swift; sourceTree = "<group>"; };
+		DC03390D2B98A6B8001985E3 /* PandaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0339112B98A6B8001985E3 /* PandaPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaPlayerUITests.swift; sourceTree = "<group>"; };
+		DC0339132B98A6B8001985E3 /* PandaPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC0339202B98A72B001985E3 /* PandoraAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraAPI.swift; sourceTree = "<group>"; };
+		DC0339222B98A74A001985E3 /* PandoraAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraAPIClient.swift; sourceTree = "<group>"; };
+		DC0339242B98A766001985E3 /* PandoraModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraModels.swift; sourceTree = "<group>"; };
+		DC0339262B98A77D001985E3 /* PandoraConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraConstants.swift; sourceTree = "<group>"; };
+		DC0339282B98A9C6001985E3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DC03392A2B98A9D8001985E3 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC0338EF2B98A6B7001985E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0339002B98A6B8001985E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC03390A2B98A6B8001985E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC0338E92B98A6B7001985E3 = {
+			isa = PBXGroup;
+			children = (
+				DC0338F42B98A6B7001985E3 /* PandaPlayer */,
+				DC0339062B98A6B8001985E3 /* PandaPlayerTests */,
+				DC0339102B98A6B8001985E3 /* PandaPlayerUITests */,
+				DC0338F32B98A6B7001985E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC0338F32B98A6B7001985E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC0338F22B98A6B7001985E3 /* PandaPlayer.app */,
+				DC0339032B98A6B8001985E3 /* PandaPlayerTests.xctest */,
+				DC03390D2B98A6B8001985E3 /* PandaPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC0338F42B98A6B7001985E3 /* PandaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				DC0338F52B98A6B7001985E3 /* PandaPlayerApp.swift */,
+				DC0338F72B98A6B7001985E3 /* ContentView.swift */,
+				DC0339282B98A9C6001985E3 /* LoginView.swift */,
+				DC03392A2B98A9D8001985E3 /* StationListView.swift */,
+				DC0339202B98A72B001985E3 /* PandoraAPI.swift */,
+				DC0339222B98A74A001985E3 /* PandoraAPIClient.swift */,
+				DC0339242B98A766001985E3 /* PandoraModels.swift */,
+				DC0339262B98A77D001985E3 /* PandoraConstants.swift */,
+				DC0338F92B98A6B8001985E3 /* Assets.xcassets */,
+				DC0338FE2B98A6B8001985E3 /* PandaPlayer.entitlements */,
+				DC0338FB2B98A6B8001985E3 /* Preview Content */,
+			);
+			path = PandaPlayer;
+			sourceTree = "<group>";
+		};
+		DC0338FB2B98A6B8001985E3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC0338FC2B98A6B8001985E3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC0339062B98A6B8001985E3 /* PandaPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC0339072B98A6B8001985E3 /* PandaPlayerTests.swift */,
+			);
+			path = PandaPlayerTests;
+			sourceTree = "<group>";
+		};
+		DC0339102B98A6B8001985E3 /* PandaPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC0339112B98A6B8001985E3 /* PandaPlayerUITests.swift */,
+				DC0339132B98A6B8001985E3 /* PandaPlayerUITestsLaunchTests.swift */,
+			);
+			path = PandaPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC0338F12B98A6B7001985E3 /* PandaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC0339172B98A6B8001985E3 /* Build configuration list for PBXNativeTarget "PandaPlayer" */;
+			buildPhases = (
+				DC0338EE2B98A6B7001985E3 /* Sources */,
+				DC0338EF2B98A6B7001985E3 /* Frameworks */,
+				DC0338F02B98A6B7001985E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PandaPlayer;
+			productName = PandaPlayer;
+			productReference = DC0338F22B98A6B7001985E3 /* PandaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC0339022B98A6B8001985E3 /* PandaPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC03391A2B98A6B8001985E3 /* Build configuration list for PBXNativeTarget "PandaPlayerTests" */;
+			buildPhases = (
+				DC0338FF2B98A6B8001985E3 /* Sources */,
+				DC0339002B98A6B8001985E3 /* Frameworks */,
+				DC0339012B98A6B8001985E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC0339052B98A6B8001985E3 /* PBXTargetDependency */,
+			);
+			name = PandaPlayerTests;
+			productName = PandaPlayerTests;
+			productReference = DC0339032B98A6B8001985E3 /* PandaPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC03390C2B98A6B8001985E3 /* PandaPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC03391D2B98A6B8001985E3 /* Build configuration list for PBXNativeTarget "PandaPlayerUITests" */;
+			buildPhases = (
+				DC0339092B98A6B8001985E3 /* Sources */,
+				DC03390A2B98A6B8001985E3 /* Frameworks */,
+				DC03390B2B98A6B8001985E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC03390F2B98A6B8001985E3 /* PBXTargetDependency */,
+			);
+			name = PandaPlayerUITests;
+			productName = PandaPlayerUITests;
+			productReference = DC03390D2B98A6B8001985E3 /* PandaPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC0338EA2B98A6B7001985E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					DC0338F12B98A6B7001985E3 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					DC0339022B98A6B8001985E3 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DC0338F12B98A6B7001985E3;
+					};
+					DC03390C2B98A6B8001985E3 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DC0338F12B98A6B7001985E3;
+					};
+				};
+			};
+			buildConfigurationList = DC0338ED2B98A6B7001985E3 /* Build configuration list for PBXProject "PandaPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC0338E92B98A6B7001985E3;
+			productRefGroup = DC0338F32B98A6B7001985E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC0338F12B98A6B7001985E3 /* PandaPlayer */,
+				DC0339022B98A6B8001985E3 /* PandaPlayerTests */,
+				DC03390C2B98A6B8001985E3 /* PandaPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC0338F02B98A6B7001985E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0338FD2B98A6B8001985E3 /* Preview Assets.xcassets in Resources */,
+				DC0338FA2B98A6B8001985E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0339012B98A6B8001985E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC03390B2B98A6B8001985E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC0338EE2B98A6B7001985E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0339212B98A72B001985E3 /* PandoraAPI.swift in Sources */,
+				DC03392B2B98A9D8001985E3 /* StationListView.swift in Sources */,
+				DC0339292B98A9C6001985E3 /* LoginView.swift in Sources */,
+				DC0339272B98A77D001985E3 /* PandoraConstants.swift in Sources */,
+				DC0338F82B98A6B7001985E3 /* ContentView.swift in Sources */,
+				DC0339252B98A766001985E3 /* PandoraModels.swift in Sources */,
+				DC0338F62B98A6B7001985E3 /* PandaPlayerApp.swift in Sources */,
+				DC0339232B98A74A001985E3 /* PandoraAPIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0338FF2B98A6B8001985E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0339082B98A6B8001985E3 /* PandaPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0339092B98A6B8001985E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0339142B98A6B8001985E3 /* PandaPlayerUITestsLaunchTests.swift in Sources */,
+				DC0339122B98A6B8001985E3 /* PandaPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC0339052B98A6B8001985E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC0338F12B98A6B7001985E3 /* PandaPlayer */;
+			targetProxy = DC0339042B98A6B8001985E3 /* PBXContainerItemProxy */;
+		};
+		DC03390F2B98A6B8001985E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC0338F12B98A6B7001985E3 /* PandaPlayer */;
+			targetProxy = DC03390E2B98A6B8001985E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC0339152B98A6B8001985E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC0339162B98A6B8001985E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DC0339182B98A6B8001985E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PandaPlayer/PandaPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PandaPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = 7BRPLLH5D4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plyght.PandaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC0339192B98A6B8001985E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PandaPlayer/PandaPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PandaPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = 7BRPLLH5D4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plyght.PandaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DC03391B2B98A6B8001985E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BRPLLH5D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plyght.PandaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PandaPlayer";
+			};
+			name = Debug;
+		};
+		DC03391C2B98A6B8001985E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BRPLLH5D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plyght.PandaPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PandaPlayer";
+			};
+			name = Release;
+		};
+		DC03391E2B98A6B8001985E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BRPLLH5D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plyght.PandaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PandaPlayer;
+			};
+			name = Debug;
+		};
+		DC03391F2B98A6B8001985E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BRPLLH5D4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plyght.PandaPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PandaPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC0338ED2B98A6B7001985E3 /* Build configuration list for PBXProject "PandaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0339152B98A6B8001985E3 /* Debug */,
+				DC0339162B98A6B8001985E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC0339172B98A6B8001985E3 /* Build configuration list for PBXNativeTarget "PandaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0339182B98A6B8001985E3 /* Debug */,
+				DC0339192B98A6B8001985E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC03391A2B98A6B8001985E3 /* Build configuration list for PBXNativeTarget "PandaPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC03391B2B98A6B8001985E3 /* Debug */,
+				DC03391C2B98A6B8001985E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC03391D2B98A6B8001985E3 /* Build configuration list for PBXNativeTarget "PandaPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC03391E2B98A6B8001985E3 /* Debug */,
+				DC03391F2B98A6B8001985E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC0338EA2B98A6B7001985E3 /* Project object */;
+}
